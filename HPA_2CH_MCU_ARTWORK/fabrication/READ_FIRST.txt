@@ -1,0 +1,3 @@
+ENGINEERING REVIEW ONLY — NOT RELEASED FOR FABRICATION OR POWER-UP.
+Read ../README_KO.md. RF/bias/protection/thermal validation is incomplete.
+6 Cu layers; 0.15mm clearance; 0.40/0.20mm minimum via; VIPPO needed.

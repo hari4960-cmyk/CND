@@ -1,0 +1,4456 @@
+[
+  {
+    "sheet": "MAIN_CONTROLLER",
+    "ref": "U1",
+    "lib": "MCU_ST_STM32F4",
+    "sym": "STM32F405ZGTx",
+    "value": "STM32F405ZGT6",
+    "fp": "Package_QFP:LQFP-144_20x20mm_P0.5mm",
+    "nets": {
+      "6": "+3V3",
+      "16": "GND",
+      "17": "+3V3",
+      "30": "+3V3",
+      "31": "GND",
+      "32": "VDDA",
+      "33": "VDDA",
+      "38": "GND",
+      "39": "+3V3",
+      "51": "GND",
+      "52": "+3V3",
+      "61": "GND",
+      "62": "+3V3",
+      "71": "VCAP_1",
+      "72": "+3V3",
+      "83": "GND",
+      "84": "+3V3",
+      "94": "GND",
+      "95": "+3V3",
+      "106": "VCAP_2",
+      "107": "GND",
+      "108": "+3V3",
+      "120": "GND",
+      "121": "+3V3",
+      "130": "GND",
+      "131": "+3V3",
+      "144": "+3V3",
+      "25": "NRST",
+      "138": "BOOT0",
+      "23": "HSE_IN",
+      "24": "HSE_OUT",
+      "48": "BOOT1",
+      "60": "FAN_PWM_1",
+      "64": "FAN_PWM_2",
+      "66": "FAN_PWM_3",
+      "67": "FAN_PWM_4",
+      "96": "FAN_PWM_5",
+      "97": "FAN_PWM_6",
+      "98": "FAN_PWM_7",
+      "99": "FAN_PWM_8",
+      "81": "FAN_PWM_9",
+      "82": "FAN_PWM_10",
+      "56": "FAN_TACH_1",
+      "57": "FAN_TACH_2",
+      "87": "FAN_TACH_3",
+      "88": "FAN_TACH_4",
+      "89": "FAN_TACH_5",
+      "90": "FAN_TACH_6",
+      "91": "FAN_TACH_7",
+      "92": "FAN_TACH_8",
+      "93": "FAN_TACH_9",
+      "124": "FAN_TACH_10",
+      "128": "PA1_ENABLE_CMD",
+      "129": "PA2_ENABLE_CMD",
+      "114": "RF1_FAULT",
+      "115": "RF2_FAULT",
+      "77": "UART_TX",
+      "78": "UART_RX",
+      "139": "I2C_SCL",
+      "140": "I2C_SDA",
+      "105": "SWDIO",
+      "109": "SWCLK",
+      "133": "SWO",
+      "34": "RF1_FWD_V",
+      "35": "RF1_REV_V",
+      "36": "RF2_FWD_V",
+      "37": "RF2_REV_V",
+      "26": "PA1_NTC",
+      "27": "PA2_NTC",
+      "28": "PA1_I_MON",
+      "29": "PA2_I_MON",
+      "44": "VIN_MON",
+      "45": "VPA_MON"
+    },
+    "sch": [
+      85,
+      145
+    ],
+    "pcb": [
+      80,
+      112
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "7994a940-da13-5c24-b3eb-83b812c237e5",
+    "function_ref": "U1"
+  },
+  {
+    "sheet": "MAIN_CONTROLLER",
+    "ref": "J1",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x06",
+    "value": "SWD 3.3V + SWO",
+    "fp": "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical",
+    "nets": {
+      "1": "+3V3",
+      "2": "SWDIO",
+      "3": "GND",
+      "4": "SWCLK",
+      "5": "NRST",
+      "6": "SWO"
+    },
+    "sch": [
+      180,
+      50
+    ],
+    "pcb": [
+      52,
+      92
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "1a94fe77-b25c-5860-a05c-9f5fb36c8149",
+    "function_ref": "JSWD"
+  },
+  {
+    "sheet": "MAIN_CONTROLLER",
+    "ref": "J2",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x04",
+    "value": "UART 3.3V",
+    "fp": "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical",
+    "nets": {
+      "1": "GND",
+      "2": "UART_TX",
+      "3": "UART_RX",
+      "4": "+3V3"
+    },
+    "sch": [
+      180,
+      85
+    ],
+    "pcb": [
+      48,
+      137
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "1feea22d-d5b9-5edb-8a9d-f4d882cf637f",
+    "function_ref": "JUART"
+  },
+  {
+    "sheet": "MAIN_CONTROLLER",
+    "ref": "J3",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x04",
+    "value": "I2C EXPANSION",
+    "fp": "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical",
+    "nets": {
+      "1": "GND",
+      "2": "+3V3",
+      "3": "I2C_SCL",
+      "4": "I2C_SDA"
+    },
+    "sch": [
+      180,
+      120
+    ],
+    "pcb": [
+      110,
+      137
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "82f9a1a6-b2ce-5f1b-8244-2737dd70b957",
+    "function_ref": "JI2C"
+  },
+  {
+    "sheet": "MAIN_CONTROLLER",
+    "ref": "J4",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x04",
+    "value": "CURRENT 0..3.3V INPUTS",
+    "fp": "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND",
+      "3": "PA1_I_MON",
+      "4": "PA2_I_MON"
+    },
+    "sch": [
+      180,
+      155
+    ],
+    "pcb": [
+      130,
+      137
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "dc645805-cc6b-507e-b087-e489c00604c0",
+    "function_ref": "JCURR"
+  },
+  {
+    "sheet": "MAIN_CONTROLLER",
+    "ref": "J5",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x06",
+    "value": "MCU RF CONTROL",
+    "fp": "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND",
+      "3": "PA1_ENABLE_CMD",
+      "4": "PA2_ENABLE_CMD",
+      "5": "RF1_FAULT",
+      "6": "RF2_FAULT"
+    },
+    "sch": [
+      180,
+      210
+    ],
+    "pcb": [
+      121,
+      104
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "30af1aab-7d7f-5e71-80ad-014901bce54c",
+    "function_ref": "JRFCTRL"
+  },
+  {
+    "sheet": "MAIN_CONTROLLER",
+    "ref": "R1",
+    "lib": "Device",
+    "sym": "R",
+    "value": "10k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "NRST"
+    },
+    "sch": [
+      260,
+      45
+    ],
+    "pcb": [
+      60,
+      128
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "e4ce9704-1f39-5fac-87cb-b4b5f1022048",
+    "function_ref": "R_RESET"
+  },
+  {
+    "sheet": "MAIN_CONTROLLER",
+    "ref": "C1",
+    "lib": "Device",
+    "sym": "C",
+    "value": "100n",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "NRST",
+      "2": "GND"
+    },
+    "sch": [
+      280,
+      45
+    ],
+    "pcb": [
+      56,
+      128
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "b404ab56-b34b-532d-abdb-a41831c4c91b",
+    "function_ref": "C_RESET"
+  },
+  {
+    "sheet": "MAIN_CONTROLLER",
+    "ref": "R2",
+    "lib": "Device",
+    "sym": "R",
+    "value": "10k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "BOOT0",
+      "2": "GND"
+    },
+    "sch": [
+      260,
+      80
+    ],
+    "pcb": [
+      67,
+      94
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "62abdc3e-40e3-53e7-8082-267764adc470",
+    "function_ref": "R_BOOT0"
+  },
+  {
+    "sheet": "MAIN_CONTROLLER",
+    "ref": "R3",
+    "lib": "Device",
+    "sym": "R",
+    "value": "10k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "BOOT1",
+      "2": "GND"
+    },
+    "sch": [
+      280,
+      80
+    ],
+    "pcb": [
+      75,
+      132
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "4c1279be-e0f6-5271-8627-666bdcbda733",
+    "function_ref": "R_BOOT1"
+  },
+  {
+    "sheet": "MAIN_CONTROLLER",
+    "ref": "Y1",
+    "lib": "Device",
+    "sym": "Crystal_GND24",
+    "value": "8MHz / CL18pF",
+    "fp": "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm",
+    "nets": {
+      "1": "HSE_IN",
+      "3": "HSE_OUT",
+      "2": "GND",
+      "4": "GND"
+    },
+    "sch": [
+      260,
+      120
+    ],
+    "pcb": [
+      62,
+      114.5
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "32a320bd-53c4-5568-b08c-12bf75f2c898",
+    "function_ref": "Y1"
+  },
+  {
+    "sheet": "MAIN_CONTROLLER",
+    "ref": "C2",
+    "lib": "Device",
+    "sym": "C",
+    "value": "33p C0G TUNE",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "HSE_IN",
+      "2": "GND"
+    },
+    "sch": [
+      250,
+      145
+    ],
+    "pcb": [
+      61,
+      110
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "eec0a922-7d8c-520b-9fc4-fc2f5e0799ea",
+    "function_ref": "C_X1"
+  },
+  {
+    "sheet": "MAIN_CONTROLLER",
+    "ref": "C3",
+    "lib": "Device",
+    "sym": "C",
+    "value": "33p C0G TUNE",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "HSE_OUT",
+      "2": "GND"
+    },
+    "sch": [
+      275,
+      145
+    ],
+    "pcb": [
+      61,
+      119
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "e63ab846-f8fe-52dc-b73d-3ad726b1f4ca",
+    "function_ref": "C_X2"
+  },
+  {
+    "sheet": "CORE_POWER",
+    "ref": "C4",
+    "lib": "Device",
+    "sym": "C",
+    "value": "2.2u low ESR",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "VCAP_1",
+      "2": "GND"
+    },
+    "sch": [
+      280,
+      150
+    ],
+    "pcb": [
+      95,
+      127
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "7661a97d-75c2-5a26-80e0-48cd04af94c8",
+    "function_ref": "C_VCAP1"
+  },
+  {
+    "sheet": "CORE_POWER",
+    "ref": "C5",
+    "lib": "Device",
+    "sym": "C",
+    "value": "2.2u low ESR",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "VCAP_2",
+      "2": "GND"
+    },
+    "sch": [
+      310,
+      150
+    ],
+    "pcb": [
+      99,
+      104.5
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "306861c2-b873-59a9-a97e-3e3e2b015c78",
+    "function_ref": "C_VCAP2"
+  },
+  {
+    "sheet": "CORE_POWER",
+    "ref": "C6",
+    "lib": "Device",
+    "sym": "C",
+    "value": "100n",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "sch": [
+      35,
+      100
+    ],
+    "pcb": [
+      65.8375,
+      111.25
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "c082e979-bc9b-51ae-ae4d-df970b7bba66",
+    "function_ref": "C_VDD17"
+  },
+  {
+    "sheet": "CORE_POWER",
+    "ref": "C7",
+    "lib": "Device",
+    "sym": "C",
+    "value": "100n",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "sch": [
+      70,
+      100
+    ],
+    "pcb": [
+      65.8375,
+      117.75
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "6149e4b7-3b06-5769-a8bb-04705101657b",
+    "function_ref": "C_VDD30"
+  },
+  {
+    "sheet": "CORE_POWER",
+    "ref": "C8",
+    "lib": "Device",
+    "sym": "C",
+    "value": "100n",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "sch": [
+      105,
+      100
+    ],
+    "pcb": [
+      72.25,
+      126.1625
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "8be9a87c-eccf-571b-a2f5-4d1beb2fcc7d",
+    "function_ref": "C_VDD39"
+  },
+  {
+    "sheet": "CORE_POWER",
+    "ref": "C9",
+    "lib": "Device",
+    "sym": "C",
+    "value": "100n",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "sch": [
+      140,
+      100
+    ],
+    "pcb": [
+      78.75,
+      126.1625
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "e26363c6-c9b4-521c-839c-7da0693b09c2",
+    "function_ref": "C_VDD52"
+  },
+  {
+    "sheet": "CORE_POWER",
+    "ref": "C10",
+    "lib": "Device",
+    "sym": "C",
+    "value": "100n",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "sch": [
+      175,
+      100
+    ],
+    "pcb": [
+      83.75,
+      126.1625
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "ac13fdb8-94d5-5cbb-bea9-7f3ac2f2c9ff",
+    "function_ref": "C_VDD62"
+  },
+  {
+    "sheet": "CORE_POWER",
+    "ref": "C11",
+    "lib": "Device",
+    "sym": "C",
+    "value": "100n",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "sch": [
+      210,
+      100
+    ],
+    "pcb": [
+      88.75,
+      126.1625
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "d7577e9d-9eec-5127-a15f-b2a2410d9cb5",
+    "function_ref": "C_VDD72"
+  },
+  {
+    "sheet": "CORE_POWER",
+    "ref": "C12",
+    "lib": "Device",
+    "sym": "C",
+    "value": "100n",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "sch": [
+      35,
+      135
+    ],
+    "pcb": [
+      94.1625,
+      115.25
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "fd060378-5806-54a6-987c-10fefc797254",
+    "function_ref": "C_VDD84"
+  },
+  {
+    "sheet": "CORE_POWER",
+    "ref": "C13",
+    "lib": "Device",
+    "sym": "C",
+    "value": "100n",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "sch": [
+      70,
+      135
+    ],
+    "pcb": [
+      94.1625,
+      109.75
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "7a7d3a1f-73be-52ee-94ec-7e6c6c54b624",
+    "function_ref": "C_VDD95"
+  },
+  {
+    "sheet": "CORE_POWER",
+    "ref": "C14",
+    "lib": "Device",
+    "sym": "C",
+    "value": "100n",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "sch": [
+      105,
+      135
+    ],
+    "pcb": [
+      94.1625,
+      103.25
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "7f457f22-3242-58b4-96a6-4eec7c7423b5",
+    "function_ref": "C_VDD108"
+  },
+  {
+    "sheet": "CORE_POWER",
+    "ref": "C15",
+    "lib": "Device",
+    "sym": "C",
+    "value": "100n",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "sch": [
+      140,
+      135
+    ],
+    "pcb": [
+      82.75,
+      97.8375
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "e73ac8b9-2e12-547c-b39c-1222b5b290fc",
+    "function_ref": "C_VDD121"
+  },
+  {
+    "sheet": "CORE_POWER",
+    "ref": "C16",
+    "lib": "Device",
+    "sym": "C",
+    "value": "100n",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "sch": [
+      175,
+      135
+    ],
+    "pcb": [
+      77.75,
+      97.8375
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "dbf31a10-761f-503f-8d68-1ccd25de7a3a",
+    "function_ref": "C_VDD131"
+  },
+  {
+    "sheet": "CORE_POWER",
+    "ref": "C17",
+    "lib": "Device",
+    "sym": "C",
+    "value": "100n",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "sch": [
+      210,
+      135
+    ],
+    "pcb": [
+      71.25,
+      97.8375
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "92c6745d-23fd-5a02-bc61-ea2911ca6212",
+    "function_ref": "C_VDD144"
+  },
+  {
+    "sheet": "CORE_POWER",
+    "ref": "FB1",
+    "lib": "Device",
+    "sym": "L_Ferrite",
+    "value": "600R@100MHz - VERIFY",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "VDDA"
+    },
+    "sch": [
+      240,
+      70
+    ],
+    "pcb": [
+      58,
+      124
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "6aec8b6f-804a-5adb-82fb-c32459d0cacb",
+    "function_ref": "FB1"
+  },
+  {
+    "sheet": "CORE_POWER",
+    "ref": "C18",
+    "lib": "Device",
+    "sym": "C",
+    "value": "100n",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "VDDA",
+      "2": "GND"
+    },
+    "sch": [
+      280,
+      80
+    ],
+    "pcb": [
+      61,
+      124
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "05f7c91b-fa60-5686-973f-e414ccc34784",
+    "function_ref": "C_ADDA"
+  },
+  {
+    "sheet": "CORE_POWER",
+    "ref": "C19",
+    "lib": "Device",
+    "sym": "C",
+    "value": "1u",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "VDDA",
+      "2": "GND"
+    },
+    "sch": [
+      310,
+      80
+    ],
+    "pcb": [
+      55,
+      124
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "f1d3ef90-5f88-5e6e-bf02-d1d0bb8a2aef",
+    "function_ref": "C_ADDB"
+  },
+  {
+    "sheet": "CORE_POWER",
+    "ref": "J6",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x02",
+    "value": "+5V CONTROL/FANS",
+    "fp": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",
+    "nets": {
+      "1": "+5V",
+      "2": "GND"
+    },
+    "sch": [
+      35,
+      35
+    ],
+    "pcb": [
+      10,
+      108
+    ],
+    "rot": -90,
+    "dnp": false,
+    "uuid": "ace63e8e-50c9-54a8-99ce-a958a0fafe93",
+    "function_ref": "JPWR"
+  },
+  {
+    "sheet": "CORE_POWER",
+    "ref": "U2",
+    "lib": "Regulator_Linear",
+    "sym": "AMS1117-3.3",
+    "value": "AMS1117-3.3",
+    "fp": "Package_TO_SOT_SMD:SOT-223-3_TabPin2",
+    "nets": {
+      "3": "+5V",
+      "1": "GND",
+      "2": "+3V3"
+    },
+    "sch": [
+      100,
+      35
+    ],
+    "pcb": [
+      30,
+      110
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "2c2c6359-99c9-57ee-9b76-cb0341deac99",
+    "function_ref": "UREG"
+  },
+  {
+    "sheet": "CORE_POWER",
+    "ref": "C20",
+    "lib": "Device",
+    "sym": "C",
+    "value": "10u/10V",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "+5V",
+      "2": "GND"
+    },
+    "sch": [
+      70,
+      65
+    ],
+    "pcb": [
+      23,
+      110
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "68d800c4-8aad-57ac-820f-3926bc311a56",
+    "function_ref": "C_IN"
+  },
+  {
+    "sheet": "CORE_POWER",
+    "ref": "C21",
+    "lib": "Device",
+    "sym": "C_Polarized",
+    "value": "10u TANT / ESR VERIFY",
+    "fp": "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "sch": [
+      130,
+      65
+    ],
+    "pcb": [
+      37,
+      110
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "5dc23f92-515f-546f-bbf3-4f9b3f951591",
+    "function_ref": "C_OUT"
+  },
+  {
+    "sheet": "CORE_POWER",
+    "ref": "C22",
+    "lib": "Device",
+    "sym": "C",
+    "value": "4.7u",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "sch": [
+      160,
+      65
+    ],
+    "pcb": [
+      37,
+      117
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "367c2213-7d42-5b7b-b9a6-1983dc4c84f4",
+    "function_ref": "C_BULK"
+  },
+  {
+    "sheet": "CORE_POWER",
+    "ref": "R4",
+    "lib": "Device",
+    "sym": "R",
+    "value": "100k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "+5V",
+      "2": "VIN_MON"
+    },
+    "sch": [
+      250,
+      200
+    ],
+    "pcb": [
+      30,
+      125
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "2f8cf141-6292-5d16-8d7f-fb5411abb5de",
+    "function_ref": "R_VIN_H"
+  },
+  {
+    "sheet": "CORE_POWER",
+    "ref": "R5",
+    "lib": "Device",
+    "sym": "R",
+    "value": "47k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "VIN_MON",
+      "2": "GND"
+    },
+    "sch": [
+      275,
+      200
+    ],
+    "pcb": [
+      34,
+      125
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "4b532ed4-d4c6-5153-ac1e-7de58eccb565",
+    "function_ref": "R_VIN_L"
+  },
+  {
+    "sheet": "CORE_POWER",
+    "ref": "C23",
+    "lib": "Device",
+    "sym": "C",
+    "value": "100n",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "VIN_MON",
+      "2": "GND"
+    },
+    "sch": [
+      300,
+      200
+    ],
+    "pcb": [
+      38,
+      125
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "75bfade4-9b24-518e-94d2-74588f31f2aa",
+    "function_ref": "C_VINMON"
+  },
+  {
+    "sheet": "FAN_CONTROL",
+    "ref": "J7",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x04",
+    "value": "FAN1 5V 4WIRE",
+    "fp": "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical",
+    "nets": {
+      "1": "GND",
+      "2": "+5V",
+      "3": "TACH_RAW_1",
+      "4": "PWM_OD_1"
+    },
+    "sch": [
+      140,
+      80
+    ],
+    "pcb": [
+      164,
+      83
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "e7592026-24f7-5d52-bd71-d790f535f71a",
+    "function_ref": "JF1"
+  },
+  {
+    "sheet": "FAN_CONTROL",
+    "ref": "Q1",
+    "lib": "Transistor_FET",
+    "sym": "2N7002",
+    "value": "2N7002",
+    "fp": "Package_TO_SOT_SMD:SOT-23",
+    "nets": {
+      "1": "FET_GATE_1",
+      "2": "GND",
+      "3": "PWM_OD_1"
+    },
+    "sch": [
+      100,
+      100
+    ],
+    "pcb": [
+      157,
+      88
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "65591d27-53de-5583-81d5-e1c3ea85c444",
+    "function_ref": "QF1"
+  },
+  {
+    "sheet": "FAN_CONTROL",
+    "ref": "R6",
+    "lib": "Device",
+    "sym": "R",
+    "value": "100",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "FAN_PWM_1",
+      "2": "FET_GATE_1"
+    },
+    "sch": [
+      65,
+      90
+    ],
+    "pcb": [
+      150,
+      87
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "e9432d9c-23bd-5e53-8e5e-cbdbc16b28c3",
+    "function_ref": "RG1"
+  },
+  {
+    "sheet": "FAN_CONTROL",
+    "ref": "R7",
+    "lib": "Device",
+    "sym": "R",
+    "value": "100k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "FET_GATE_1",
+      "2": "GND"
+    },
+    "sch": [
+      85,
+      120
+    ],
+    "pcb": [
+      150,
+      91
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "e52c48d3-9f97-5ed5-9ab9-e947d7dd85c5",
+    "function_ref": "RPD1"
+  },
+  {
+    "sheet": "FAN_CONTROL",
+    "ref": "R8",
+    "lib": "Device",
+    "sym": "R",
+    "value": "10k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "TACH_RAW_1"
+    },
+    "sch": [
+      155,
+      110
+    ],
+    "pcb": [
+      160,
+      80
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "047bd6bd-1d26-5256-a7a3-acbda3f0db4d",
+    "function_ref": "RTP1"
+  },
+  {
+    "sheet": "FAN_CONTROL",
+    "ref": "R9",
+    "lib": "Device",
+    "sym": "R",
+    "value": "1k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "TACH_RAW_1",
+      "2": "FAN_TACH_1"
+    },
+    "sch": [
+      155,
+      135
+    ],
+    "pcb": [
+      154,
+      81
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "088bc7cf-1793-5a8a-a61f-74fa66cdb1e2",
+    "function_ref": "RTS1"
+  },
+  {
+    "sheet": "FAN_CONTROL",
+    "ref": "C24",
+    "lib": "Device",
+    "sym": "C",
+    "value": "1n",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "FAN_TACH_1",
+      "2": "GND"
+    },
+    "sch": [
+      120,
+      140
+    ],
+    "pcb": [
+      150,
+      81
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "aba5ca2d-2d64-5480-898a-e8dc70032d06",
+    "function_ref": "CT1"
+  },
+  {
+    "sheet": "FAN_CONTROL",
+    "ref": "J8",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x04",
+    "value": "FAN2 5V 4WIRE",
+    "fp": "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical",
+    "nets": {
+      "1": "GND",
+      "2": "+5V",
+      "3": "TACH_RAW_2",
+      "4": "PWM_OD_2"
+    },
+    "sch": [
+      290,
+      80
+    ],
+    "pcb": [
+      164,
+      97
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "cb399122-7b2b-5da8-9f31-0cc5dee16109",
+    "function_ref": "JF2"
+  },
+  {
+    "sheet": "FAN_CONTROL",
+    "ref": "Q2",
+    "lib": "Transistor_FET",
+    "sym": "2N7002",
+    "value": "2N7002",
+    "fp": "Package_TO_SOT_SMD:SOT-23",
+    "nets": {
+      "1": "FET_GATE_2",
+      "2": "GND",
+      "3": "PWM_OD_2"
+    },
+    "sch": [
+      250,
+      100
+    ],
+    "pcb": [
+      157,
+      102
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "f3dfe1c2-3cae-51b4-bbf5-d657e6b33a3a",
+    "function_ref": "QF2"
+  },
+  {
+    "sheet": "FAN_CONTROL",
+    "ref": "R10",
+    "lib": "Device",
+    "sym": "R",
+    "value": "100",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "FAN_PWM_2",
+      "2": "FET_GATE_2"
+    },
+    "sch": [
+      215,
+      90
+    ],
+    "pcb": [
+      150,
+      101
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "44c0946c-7624-5c12-961f-d1e1939b71e5",
+    "function_ref": "RG2"
+  },
+  {
+    "sheet": "FAN_CONTROL",
+    "ref": "R11",
+    "lib": "Device",
+    "sym": "R",
+    "value": "100k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "FET_GATE_2",
+      "2": "GND"
+    },
+    "sch": [
+      235,
+      120
+    ],
+    "pcb": [
+      150,
+      105
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "110963f3-5b6e-5b21-bf5b-cc7e40fa22f2",
+    "function_ref": "RPD2"
+  },
+  {
+    "sheet": "FAN_CONTROL",
+    "ref": "R12",
+    "lib": "Device",
+    "sym": "R",
+    "value": "10k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "TACH_RAW_2"
+    },
+    "sch": [
+      305,
+      110
+    ],
+    "pcb": [
+      160,
+      94
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "64054013-64ec-5e2d-91b1-6df238b17bd7",
+    "function_ref": "RTP2"
+  },
+  {
+    "sheet": "FAN_CONTROL",
+    "ref": "R13",
+    "lib": "Device",
+    "sym": "R",
+    "value": "1k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "TACH_RAW_2",
+      "2": "FAN_TACH_2"
+    },
+    "sch": [
+      305,
+      135
+    ],
+    "pcb": [
+      154,
+      95
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "a9b0e667-9402-5671-8713-4f99f5c6a989",
+    "function_ref": "RTS2"
+  },
+  {
+    "sheet": "FAN_CONTROL",
+    "ref": "C25",
+    "lib": "Device",
+    "sym": "C",
+    "value": "1n",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "FAN_TACH_2",
+      "2": "GND"
+    },
+    "sch": [
+      270,
+      140
+    ],
+    "pcb": [
+      150,
+      95
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "d7d95451-7eba-5966-8457-f1d534c46a11",
+    "function_ref": "CT2"
+  },
+  {
+    "sheet": "FAN_CONTROL",
+    "ref": "J9",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x04",
+    "value": "FAN3 5V 4WIRE",
+    "fp": "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical",
+    "nets": {
+      "1": "GND",
+      "2": "+5V",
+      "3": "TACH_RAW_3",
+      "4": "PWM_OD_3"
+    },
+    "sch": [
+      440,
+      80
+    ],
+    "pcb": [
+      164,
+      111
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "00b2c310-41c6-543f-b320-f65b2f180107",
+    "function_ref": "JF3"
+  },
+  {
+    "sheet": "FAN_CONTROL",
+    "ref": "Q3",
+    "lib": "Transistor_FET",
+    "sym": "2N7002",
+    "value": "2N7002",
+    "fp": "Package_TO_SOT_SMD:SOT-23",
+    "nets": {
+      "1": "FET_GATE_3",
+      "2": "GND",
+      "3": "PWM_OD_3"
+    },
+    "sch": [
+      400,
+      100
+    ],
+    "pcb": [
+      157,
+      116
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "f5106686-cc47-58c2-930f-898056f26818",
+    "function_ref": "QF3"
+  },
+  {
+    "sheet": "FAN_CONTROL",
+    "ref": "R14",
+    "lib": "Device",
+    "sym": "R",
+    "value": "100",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "FAN_PWM_3",
+      "2": "FET_GATE_3"
+    },
+    "sch": [
+      365,
+      90
+    ],
+    "pcb": [
+      150,
+      115
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "9784ef47-b066-5291-a8ee-bfc970a35253",
+    "function_ref": "RG3"
+  },
+  {
+    "sheet": "FAN_CONTROL",
+    "ref": "R15",
+    "lib": "Device",
+    "sym": "R",
+    "value": "100k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "FET_GATE_3",
+      "2": "GND"
+    },
+    "sch": [
+      385,
+      120
+    ],
+    "pcb": [
+      150,
+      119
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "063abef8-2c24-54ca-8971-94d3b0b5561b",
+    "function_ref": "RPD3"
+  },
+  {
+    "sheet": "FAN_CONTROL",
+    "ref": "R16",
+    "lib": "Device",
+    "sym": "R",
+    "value": "10k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "TACH_RAW_3"
+    },
+    "sch": [
+      455,
+      110
+    ],
+    "pcb": [
+      160,
+      108
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "66b92984-477d-5243-9ac9-47500bf4527c",
+    "function_ref": "RTP3"
+  },
+  {
+    "sheet": "FAN_CONTROL",
+    "ref": "R17",
+    "lib": "Device",
+    "sym": "R",
+    "value": "1k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "TACH_RAW_3",
+      "2": "FAN_TACH_3"
+    },
+    "sch": [
+      455,
+      135
+    ],
+    "pcb": [
+      154,
+      109
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "0ae9d944-7e0c-5319-bab1-fca8a6b9ed2a",
+    "function_ref": "RTS3"
+  },
+  {
+    "sheet": "FAN_CONTROL",
+    "ref": "C26",
+    "lib": "Device",
+    "sym": "C",
+    "value": "1n",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "FAN_TACH_3",
+      "2": "GND"
+    },
+    "sch": [
+      420,
+      140
+    ],
+    "pcb": [
+      150,
+      109
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "4134f504-0428-5398-a536-246dbdcb99cb",
+    "function_ref": "CT3"
+  },
+  {
+    "sheet": "FAN_CONTROL",
+    "ref": "J10",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x04",
+    "value": "FAN4 5V 4WIRE",
+    "fp": "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical",
+    "nets": {
+      "1": "GND",
+      "2": "+5V",
+      "3": "TACH_RAW_4",
+      "4": "PWM_OD_4"
+    },
+    "sch": [
+      590,
+      80
+    ],
+    "pcb": [
+      164,
+      125
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "6e5b17de-3e28-5d6f-9137-ef65ab1bf178",
+    "function_ref": "JF4"
+  },
+  {
+    "sheet": "FAN_CONTROL",
+    "ref": "Q4",
+    "lib": "Transistor_FET",
+    "sym": "2N7002",
+    "value": "2N7002",
+    "fp": "Package_TO_SOT_SMD:SOT-23",
+    "nets": {
+      "1": "FET_GATE_4",
+      "2": "GND",
+      "3": "PWM_OD_4"
+    },
+    "sch": [
+      550,
+      100
+    ],
+    "pcb": [
+      157,
+      130
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "22f2e543-3a8f-5253-b3f0-ab134f4fc68a",
+    "function_ref": "QF4"
+  },
+  {
+    "sheet": "FAN_CONTROL",
+    "ref": "R18",
+    "lib": "Device",
+    "sym": "R",
+    "value": "100",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "FAN_PWM_4",
+      "2": "FET_GATE_4"
+    },
+    "sch": [
+      515,
+      90
+    ],
+    "pcb": [
+      150,
+      129
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "61677e9f-3065-5a89-bc99-47210edec4f7",
+    "function_ref": "RG4"
+  },
+  {
+    "sheet": "FAN_CONTROL",
+    "ref": "R19",
+    "lib": "Device",
+    "sym": "R",
+    "value": "100k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "FET_GATE_4",
+      "2": "GND"
+    },
+    "sch": [
+      535,
+      120
+    ],
+    "pcb": [
+      150,
+      133
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "19f1dc1e-2041-5c85-bf02-8a40705a8ef5",
+    "function_ref": "RPD4"
+  },
+  {
+    "sheet": "FAN_CONTROL",
+    "ref": "R20",
+    "lib": "Device",
+    "sym": "R",
+    "value": "10k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "TACH_RAW_4"
+    },
+    "sch": [
+      605,
+      110
+    ],
+    "pcb": [
+      160,
+      122
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "c999c5e3-1b49-5095-b16d-18c35bb88001",
+    "function_ref": "RTP4"
+  },
+  {
+    "sheet": "FAN_CONTROL",
+    "ref": "R21",
+    "lib": "Device",
+    "sym": "R",
+    "value": "1k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "TACH_RAW_4",
+      "2": "FAN_TACH_4"
+    },
+    "sch": [
+      605,
+      135
+    ],
+    "pcb": [
+      154,
+      123
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "b4f531af-f88a-5ceb-abbb-85599d52df41",
+    "function_ref": "RTS4"
+  },
+  {
+    "sheet": "FAN_CONTROL",
+    "ref": "C27",
+    "lib": "Device",
+    "sym": "C",
+    "value": "1n",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "FAN_TACH_4",
+      "2": "GND"
+    },
+    "sch": [
+      570,
+      140
+    ],
+    "pcb": [
+      150,
+      123
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "b11c627d-7b6d-5936-80be-a10290abb972",
+    "function_ref": "CT4"
+  },
+  {
+    "sheet": "FAN_CONTROL",
+    "ref": "J11",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x04",
+    "value": "FAN5 5V 4WIRE",
+    "fp": "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical",
+    "nets": {
+      "1": "GND",
+      "2": "+5V",
+      "3": "TACH_RAW_5",
+      "4": "PWM_OD_5"
+    },
+    "sch": [
+      740,
+      80
+    ],
+    "pcb": [
+      164,
+      139
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "fcce2e9c-7e9e-5f88-a0c5-c42618405f37",
+    "function_ref": "JF5"
+  },
+  {
+    "sheet": "FAN_CONTROL",
+    "ref": "Q5",
+    "lib": "Transistor_FET",
+    "sym": "2N7002",
+    "value": "2N7002",
+    "fp": "Package_TO_SOT_SMD:SOT-23",
+    "nets": {
+      "1": "FET_GATE_5",
+      "2": "GND",
+      "3": "PWM_OD_5"
+    },
+    "sch": [
+      700,
+      100
+    ],
+    "pcb": [
+      157,
+      144
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "dd60ebbf-626d-5882-962f-ab21fe8d5d30",
+    "function_ref": "QF5"
+  },
+  {
+    "sheet": "FAN_CONTROL",
+    "ref": "R22",
+    "lib": "Device",
+    "sym": "R",
+    "value": "100",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "FAN_PWM_5",
+      "2": "FET_GATE_5"
+    },
+    "sch": [
+      665,
+      90
+    ],
+    "pcb": [
+      150,
+      143
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "ba45723d-3b20-5976-bfd9-47630205c2d1",
+    "function_ref": "RG5"
+  },
+  {
+    "sheet": "FAN_CONTROL",
+    "ref": "R23",
+    "lib": "Device",
+    "sym": "R",
+    "value": "100k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "FET_GATE_5",
+      "2": "GND"
+    },
+    "sch": [
+      685,
+      120
+    ],
+    "pcb": [
+      150,
+      147
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "5d28cd95-e8a4-541c-8816-41818fe29726",
+    "function_ref": "RPD5"
+  },
+  {
+    "sheet": "FAN_CONTROL",
+    "ref": "R24",
+    "lib": "Device",
+    "sym": "R",
+    "value": "10k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "TACH_RAW_5"
+    },
+    "sch": [
+      755,
+      110
+    ],
+    "pcb": [
+      160,
+      136
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "480d0fca-faff-5381-acb0-c9313c8a8340",
+    "function_ref": "RTP5"
+  },
+  {
+    "sheet": "FAN_CONTROL",
+    "ref": "R25",
+    "lib": "Device",
+    "sym": "R",
+    "value": "1k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "TACH_RAW_5",
+      "2": "FAN_TACH_5"
+    },
+    "sch": [
+      755,
+      135
+    ],
+    "pcb": [
+      154,
+      137
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "3eb05c55-0225-534c-8a04-61e096cd1724",
+    "function_ref": "RTS5"
+  },
+  {
+    "sheet": "FAN_CONTROL",
+    "ref": "C28",
+    "lib": "Device",
+    "sym": "C",
+    "value": "1n",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "FAN_TACH_5",
+      "2": "GND"
+    },
+    "sch": [
+      720,
+      140
+    ],
+    "pcb": [
+      150,
+      137
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "d6af9d8a-3d1b-5fe2-a96c-a44091b8c105",
+    "function_ref": "CT5"
+  },
+  {
+    "sheet": "FAN_CONTROL",
+    "ref": "J12",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x04",
+    "value": "FAN6 5V 4WIRE",
+    "fp": "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical",
+    "nets": {
+      "1": "GND",
+      "2": "+5V",
+      "3": "TACH_RAW_6",
+      "4": "PWM_OD_6"
+    },
+    "sch": [
+      140,
+      230
+    ],
+    "pcb": [
+      185,
+      83
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "6ed69c37-1238-5696-a32c-759919aaeb40",
+    "function_ref": "JF6"
+  },
+  {
+    "sheet": "FAN_CONTROL",
+    "ref": "Q6",
+    "lib": "Transistor_FET",
+    "sym": "2N7002",
+    "value": "2N7002",
+    "fp": "Package_TO_SOT_SMD:SOT-23",
+    "nets": {
+      "1": "FET_GATE_6",
+      "2": "GND",
+      "3": "PWM_OD_6"
+    },
+    "sch": [
+      100,
+      250
+    ],
+    "pcb": [
+      178,
+      88
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "e6d21794-4ac0-55ba-ba04-77e45e7e8095",
+    "function_ref": "QF6"
+  },
+  {
+    "sheet": "FAN_CONTROL",
+    "ref": "R26",
+    "lib": "Device",
+    "sym": "R",
+    "value": "100",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "FAN_PWM_6",
+      "2": "FET_GATE_6"
+    },
+    "sch": [
+      65,
+      240
+    ],
+    "pcb": [
+      171,
+      87
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "425d19a5-c00b-5f72-8dde-a36895c34555",
+    "function_ref": "RG6"
+  },
+  {
+    "sheet": "FAN_CONTROL",
+    "ref": "R27",
+    "lib": "Device",
+    "sym": "R",
+    "value": "100k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "FET_GATE_6",
+      "2": "GND"
+    },
+    "sch": [
+      85,
+      270
+    ],
+    "pcb": [
+      171,
+      91
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "e75d7bca-2e4b-5ee5-bedb-386c5e7a703c",
+    "function_ref": "RPD6"
+  },
+  {
+    "sheet": "FAN_CONTROL",
+    "ref": "R28",
+    "lib": "Device",
+    "sym": "R",
+    "value": "10k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "TACH_RAW_6"
+    },
+    "sch": [
+      155,
+      260
+    ],
+    "pcb": [
+      181,
+      80
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "ac4a6610-86f3-5622-9c89-78d42bd12962",
+    "function_ref": "RTP6"
+  },
+  {
+    "sheet": "FAN_CONTROL",
+    "ref": "R29",
+    "lib": "Device",
+    "sym": "R",
+    "value": "1k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "TACH_RAW_6",
+      "2": "FAN_TACH_6"
+    },
+    "sch": [
+      155,
+      285
+    ],
+    "pcb": [
+      175,
+      81
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "3608cecb-15b7-53bf-8ebf-ad068851304d",
+    "function_ref": "RTS6"
+  },
+  {
+    "sheet": "FAN_CONTROL",
+    "ref": "C29",
+    "lib": "Device",
+    "sym": "C",
+    "value": "1n",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "FAN_TACH_6",
+      "2": "GND"
+    },
+    "sch": [
+      120,
+      290
+    ],
+    "pcb": [
+      171,
+      81
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "df89ef3a-e061-5db1-ba5c-2d721eeb5c8a",
+    "function_ref": "CT6"
+  },
+  {
+    "sheet": "FAN_CONTROL",
+    "ref": "J13",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x04",
+    "value": "FAN7 5V 4WIRE",
+    "fp": "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical",
+    "nets": {
+      "1": "GND",
+      "2": "+5V",
+      "3": "TACH_RAW_7",
+      "4": "PWM_OD_7"
+    },
+    "sch": [
+      290,
+      230
+    ],
+    "pcb": [
+      185,
+      97
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "56e6638e-08a2-52bf-bef4-e6d3df42d640",
+    "function_ref": "JF7"
+  },
+  {
+    "sheet": "FAN_CONTROL",
+    "ref": "Q7",
+    "lib": "Transistor_FET",
+    "sym": "2N7002",
+    "value": "2N7002",
+    "fp": "Package_TO_SOT_SMD:SOT-23",
+    "nets": {
+      "1": "FET_GATE_7",
+      "2": "GND",
+      "3": "PWM_OD_7"
+    },
+    "sch": [
+      250,
+      250
+    ],
+    "pcb": [
+      178,
+      102
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "012e5258-da69-56d0-8c9e-17d3959a19bd",
+    "function_ref": "QF7"
+  },
+  {
+    "sheet": "FAN_CONTROL",
+    "ref": "R30",
+    "lib": "Device",
+    "sym": "R",
+    "value": "100",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "FAN_PWM_7",
+      "2": "FET_GATE_7"
+    },
+    "sch": [
+      215,
+      240
+    ],
+    "pcb": [
+      171,
+      101
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "f618356c-2b6c-50c6-b402-7b752f362b1d",
+    "function_ref": "RG7"
+  },
+  {
+    "sheet": "FAN_CONTROL",
+    "ref": "R31",
+    "lib": "Device",
+    "sym": "R",
+    "value": "100k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "FET_GATE_7",
+      "2": "GND"
+    },
+    "sch": [
+      235,
+      270
+    ],
+    "pcb": [
+      171,
+      105
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "726e66b7-bf73-5759-89a1-0d911d383c63",
+    "function_ref": "RPD7"
+  },
+  {
+    "sheet": "FAN_CONTROL",
+    "ref": "R32",
+    "lib": "Device",
+    "sym": "R",
+    "value": "10k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "TACH_RAW_7"
+    },
+    "sch": [
+      305,
+      260
+    ],
+    "pcb": [
+      181,
+      94
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "7ca3a3d3-3043-5e31-941d-b6f2a69537ac",
+    "function_ref": "RTP7"
+  },
+  {
+    "sheet": "FAN_CONTROL",
+    "ref": "R33",
+    "lib": "Device",
+    "sym": "R",
+    "value": "1k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "TACH_RAW_7",
+      "2": "FAN_TACH_7"
+    },
+    "sch": [
+      305,
+      285
+    ],
+    "pcb": [
+      175,
+      95
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "14d2886b-dd4f-51fb-8f92-26d9122b1829",
+    "function_ref": "RTS7"
+  },
+  {
+    "sheet": "FAN_CONTROL",
+    "ref": "C30",
+    "lib": "Device",
+    "sym": "C",
+    "value": "1n",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "FAN_TACH_7",
+      "2": "GND"
+    },
+    "sch": [
+      270,
+      290
+    ],
+    "pcb": [
+      171,
+      95
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "854ca589-d91a-58f8-9f2c-ba41b3a0ded6",
+    "function_ref": "CT7"
+  },
+  {
+    "sheet": "FAN_CONTROL",
+    "ref": "J14",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x04",
+    "value": "FAN8 5V 4WIRE",
+    "fp": "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical",
+    "nets": {
+      "1": "GND",
+      "2": "+5V",
+      "3": "TACH_RAW_8",
+      "4": "PWM_OD_8"
+    },
+    "sch": [
+      440,
+      230
+    ],
+    "pcb": [
+      185,
+      111
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "2937556d-e860-5495-9f6c-679c6f81e665",
+    "function_ref": "JF8"
+  },
+  {
+    "sheet": "FAN_CONTROL",
+    "ref": "Q8",
+    "lib": "Transistor_FET",
+    "sym": "2N7002",
+    "value": "2N7002",
+    "fp": "Package_TO_SOT_SMD:SOT-23",
+    "nets": {
+      "1": "FET_GATE_8",
+      "2": "GND",
+      "3": "PWM_OD_8"
+    },
+    "sch": [
+      400,
+      250
+    ],
+    "pcb": [
+      178,
+      116
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "e5d6947d-8851-5f3a-8070-08a6bde511bb",
+    "function_ref": "QF8"
+  },
+  {
+    "sheet": "FAN_CONTROL",
+    "ref": "R34",
+    "lib": "Device",
+    "sym": "R",
+    "value": "100",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "FAN_PWM_8",
+      "2": "FET_GATE_8"
+    },
+    "sch": [
+      365,
+      240
+    ],
+    "pcb": [
+      171,
+      115
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "9b19e787-e452-5f0a-a935-25b361d713a8",
+    "function_ref": "RG8"
+  },
+  {
+    "sheet": "FAN_CONTROL",
+    "ref": "R35",
+    "lib": "Device",
+    "sym": "R",
+    "value": "100k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "FET_GATE_8",
+      "2": "GND"
+    },
+    "sch": [
+      385,
+      270
+    ],
+    "pcb": [
+      171,
+      119
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "20a54eee-80bb-543f-8a96-481dc95c105c",
+    "function_ref": "RPD8"
+  },
+  {
+    "sheet": "FAN_CONTROL",
+    "ref": "R36",
+    "lib": "Device",
+    "sym": "R",
+    "value": "10k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "TACH_RAW_8"
+    },
+    "sch": [
+      455,
+      260
+    ],
+    "pcb": [
+      181,
+      108
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "2f20001d-eb58-5bd4-a329-25de6e04daa4",
+    "function_ref": "RTP8"
+  },
+  {
+    "sheet": "FAN_CONTROL",
+    "ref": "R37",
+    "lib": "Device",
+    "sym": "R",
+    "value": "1k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "TACH_RAW_8",
+      "2": "FAN_TACH_8"
+    },
+    "sch": [
+      455,
+      285
+    ],
+    "pcb": [
+      175,
+      109
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "aced935b-f8c7-514e-8087-ddad97d0553c",
+    "function_ref": "RTS8"
+  },
+  {
+    "sheet": "FAN_CONTROL",
+    "ref": "C31",
+    "lib": "Device",
+    "sym": "C",
+    "value": "1n",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "FAN_TACH_8",
+      "2": "GND"
+    },
+    "sch": [
+      420,
+      290
+    ],
+    "pcb": [
+      171,
+      109
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "84661074-c54f-563b-8cdf-f64504d92533",
+    "function_ref": "CT8"
+  },
+  {
+    "sheet": "FAN_CONTROL",
+    "ref": "J15",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x04",
+    "value": "FAN9 5V 4WIRE",
+    "fp": "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical",
+    "nets": {
+      "1": "GND",
+      "2": "+5V",
+      "3": "TACH_RAW_9",
+      "4": "PWM_OD_9"
+    },
+    "sch": [
+      590,
+      230
+    ],
+    "pcb": [
+      185,
+      125
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "7fa09d06-203e-5c3f-8487-bea1bb0d9a0b",
+    "function_ref": "JF9"
+  },
+  {
+    "sheet": "FAN_CONTROL",
+    "ref": "Q9",
+    "lib": "Transistor_FET",
+    "sym": "2N7002",
+    "value": "2N7002",
+    "fp": "Package_TO_SOT_SMD:SOT-23",
+    "nets": {
+      "1": "FET_GATE_9",
+      "2": "GND",
+      "3": "PWM_OD_9"
+    },
+    "sch": [
+      550,
+      250
+    ],
+    "pcb": [
+      178,
+      130
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "a4d7367b-f912-596b-9f03-48cdcb0c57c9",
+    "function_ref": "QF9"
+  },
+  {
+    "sheet": "FAN_CONTROL",
+    "ref": "R38",
+    "lib": "Device",
+    "sym": "R",
+    "value": "100",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "FAN_PWM_9",
+      "2": "FET_GATE_9"
+    },
+    "sch": [
+      515,
+      240
+    ],
+    "pcb": [
+      171,
+      129
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "d1eb2d76-181f-546b-b229-8bfb31a07764",
+    "function_ref": "RG9"
+  },
+  {
+    "sheet": "FAN_CONTROL",
+    "ref": "R39",
+    "lib": "Device",
+    "sym": "R",
+    "value": "100k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "FET_GATE_9",
+      "2": "GND"
+    },
+    "sch": [
+      535,
+      270
+    ],
+    "pcb": [
+      171,
+      133
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "7ca50b9c-5a0a-5a16-9c09-58df174a5e27",
+    "function_ref": "RPD9"
+  },
+  {
+    "sheet": "FAN_CONTROL",
+    "ref": "R40",
+    "lib": "Device",
+    "sym": "R",
+    "value": "10k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "TACH_RAW_9"
+    },
+    "sch": [
+      605,
+      260
+    ],
+    "pcb": [
+      181,
+      122
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "c2675914-520e-5b7a-be82-ba2c9c763b5c",
+    "function_ref": "RTP9"
+  },
+  {
+    "sheet": "FAN_CONTROL",
+    "ref": "R41",
+    "lib": "Device",
+    "sym": "R",
+    "value": "1k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "TACH_RAW_9",
+      "2": "FAN_TACH_9"
+    },
+    "sch": [
+      605,
+      285
+    ],
+    "pcb": [
+      175,
+      123
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "7b83ce1d-4b08-5c23-9ca7-845514021b83",
+    "function_ref": "RTS9"
+  },
+  {
+    "sheet": "FAN_CONTROL",
+    "ref": "C32",
+    "lib": "Device",
+    "sym": "C",
+    "value": "1n",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "FAN_TACH_9",
+      "2": "GND"
+    },
+    "sch": [
+      570,
+      290
+    ],
+    "pcb": [
+      171,
+      123
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "3de3045b-f795-5629-8961-be92edeeff05",
+    "function_ref": "CT9"
+  },
+  {
+    "sheet": "FAN_CONTROL",
+    "ref": "J16",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x04",
+    "value": "FAN10 5V 4WIRE",
+    "fp": "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical",
+    "nets": {
+      "1": "GND",
+      "2": "+5V",
+      "3": "TACH_RAW_10",
+      "4": "PWM_OD_10"
+    },
+    "sch": [
+      740,
+      230
+    ],
+    "pcb": [
+      185,
+      139
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "9a9c626f-7223-5d96-ba1b-8a88cda7805e",
+    "function_ref": "JF10"
+  },
+  {
+    "sheet": "FAN_CONTROL",
+    "ref": "Q10",
+    "lib": "Transistor_FET",
+    "sym": "2N7002",
+    "value": "2N7002",
+    "fp": "Package_TO_SOT_SMD:SOT-23",
+    "nets": {
+      "1": "FET_GATE_10",
+      "2": "GND",
+      "3": "PWM_OD_10"
+    },
+    "sch": [
+      700,
+      250
+    ],
+    "pcb": [
+      178,
+      144
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "04181829-0f82-5d75-a1af-f8399971b63c",
+    "function_ref": "QF10"
+  },
+  {
+    "sheet": "FAN_CONTROL",
+    "ref": "R42",
+    "lib": "Device",
+    "sym": "R",
+    "value": "100",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "FAN_PWM_10",
+      "2": "FET_GATE_10"
+    },
+    "sch": [
+      665,
+      240
+    ],
+    "pcb": [
+      171,
+      143
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "7ec26335-650d-5139-a0b6-aad6d6f22ef1",
+    "function_ref": "RG10"
+  },
+  {
+    "sheet": "FAN_CONTROL",
+    "ref": "R43",
+    "lib": "Device",
+    "sym": "R",
+    "value": "100k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "FET_GATE_10",
+      "2": "GND"
+    },
+    "sch": [
+      685,
+      270
+    ],
+    "pcb": [
+      171,
+      147
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "f9f15a49-7793-5f83-b127-c8f2610d6035",
+    "function_ref": "RPD10"
+  },
+  {
+    "sheet": "FAN_CONTROL",
+    "ref": "R44",
+    "lib": "Device",
+    "sym": "R",
+    "value": "10k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "TACH_RAW_10"
+    },
+    "sch": [
+      755,
+      260
+    ],
+    "pcb": [
+      181,
+      136
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "b949d333-2d75-5692-87bd-db7684760fd1",
+    "function_ref": "RTP10"
+  },
+  {
+    "sheet": "FAN_CONTROL",
+    "ref": "R45",
+    "lib": "Device",
+    "sym": "R",
+    "value": "1k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "TACH_RAW_10",
+      "2": "FAN_TACH_10"
+    },
+    "sch": [
+      755,
+      285
+    ],
+    "pcb": [
+      175,
+      137
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "c19af24a-1528-5a1c-b8ac-1a7756a12f84",
+    "function_ref": "RTS10"
+  },
+  {
+    "sheet": "FAN_CONTROL",
+    "ref": "C33",
+    "lib": "Device",
+    "sym": "C",
+    "value": "1n",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "FAN_TACH_10",
+      "2": "GND"
+    },
+    "sch": [
+      720,
+      290
+    ],
+    "pcb": [
+      171,
+      137
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "f15cfe39-34f5-5779-9374-65f4df610d95",
+    "function_ref": "CT10"
+  },
+  {
+    "sheet": "RF_DRIVER_CH1",
+    "ref": "J17",
+    "lib": "Connector",
+    "sym": "Conn_Coaxial",
+    "value": "RF INPUT CH1",
+    "fp": "Connector_Coaxial:SMA_Amphenol_132134_Vertical",
+    "nets": {
+      "1": "RF_SRC_1",
+      "2": "GND"
+    },
+    "sch": [
+      35,
+      60
+    ],
+    "pcb": [
+      12,
+      25
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "aaf1b884-2214-54f3-9ebb-9fda2d0ba394",
+    "function_ref": "JRF_IN1"
+  },
+  {
+    "sheet": "RF_DRIVER_CH1",
+    "ref": "C34",
+    "lib": "Device",
+    "sym": "C",
+    "value": "22p C0G / RF TUNE",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "RF_SRC_1",
+      "2": "DRV_IN_1"
+    },
+    "sch": [
+      75,
+      60
+    ],
+    "pcb": [
+      30,
+      25
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "c99312f8-4428-5697-8f4c-45d70f78961e",
+    "function_ref": "C_RFIN1"
+  },
+  {
+    "sheet": "RF_DRIVER_CH1",
+    "ref": "U3",
+    "lib": "RF_Amplifier",
+    "sym": "GVA-84",
+    "value": "GVA-84 / UNVALIDATED",
+    "fp": "Package_TO_SOT_SMD:SOT-89-3",
+    "nets": {
+      "1": "DRV_IN_1",
+      "2": "GND",
+      "3": "DRV_OUT_1"
+    },
+    "sch": [
+      115,
+      60
+    ],
+    "pcb": [
+      50,
+      25
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "66e1219c-59e6-5d4c-9fe3-0a3172dd88c1",
+    "function_ref": "UDRV1"
+  },
+  {
+    "sheet": "RF_DRIVER_CH1",
+    "ref": "L1",
+    "lib": "Device",
+    "sym": "L",
+    "value": "10n RF TUNE",
+    "fp": "Inductor_SMD:L_0805_2012Metric",
+    "nets": {
+      "1": "DRV_FEED_1",
+      "2": "DRV_OUT_1"
+    },
+    "sch": [
+      115,
+      100
+    ],
+    "pcb": [
+      54,
+      18
+    ],
+    "rot": 90,
+    "dnp": false,
+    "uuid": "d14a02bb-c6fc-575a-ba2a-89e25907a683",
+    "function_ref": "LDRV1"
+  },
+  {
+    "sheet": "RF_DRIVER_CH1",
+    "ref": "R46",
+    "lib": "Device",
+    "sym": "R",
+    "value": "0R DNP",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "+5V",
+      "2": "DRV_FEED_1"
+    },
+    "sch": [
+      75,
+      120
+    ],
+    "pcb": [
+      46,
+      15
+    ],
+    "rot": 0,
+    "dnp": true,
+    "uuid": "9a8a9ebe-1adb-57e9-8ad5-a417e30b82db",
+    "function_ref": "R_DRV_PWR1"
+  },
+  {
+    "sheet": "RF_DRIVER_CH1",
+    "ref": "C35",
+    "lib": "Device",
+    "sym": "C",
+    "value": "100n",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "DRV_FEED_1",
+      "2": "GND"
+    },
+    "sch": [
+      150,
+      110
+    ],
+    "pcb": [
+      60,
+      15
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "d3768b5a-9e4a-5f20-ac9c-e7d864f53409",
+    "function_ref": "C_DRVDC1"
+  },
+  {
+    "sheet": "RF_POWER_CH1",
+    "ref": "C36",
+    "lib": "Device",
+    "sym": "C",
+    "value": "22p C0G / RF TUNE",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "DRV_OUT_1",
+      "2": "PA_IN_1"
+    },
+    "sch": [
+      35,
+      60
+    ],
+    "pcb": [
+      77,
+      25
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "91e3a518-420b-5bf7-8533-25d6a1af0412",
+    "function_ref": "C_INTER1"
+  },
+  {
+    "sheet": "RF_POWER_CH1",
+    "ref": "U4",
+    "lib": "RF_Amplifier",
+    "sym": "HMC8500PM5E",
+    "value": "HMC8500PM5E / UNVALIDATED",
+    "fp": "Package_CSP:LFCSP-32-1EP_5x5mm_P0.5mm_EP3.1x3.1mm",
+    "nets": {
+      "1": "GND",
+      "2": "GND",
+      "3": "GND",
+      "4": "PA_IN_1",
+      "5": "PA_IN_1",
+      "6": "GND",
+      "7": "GND",
+      "8": "GND",
+      "9": "GND",
+      "10": "GND",
+      "11": "GND",
+      "12": "GND",
+      "13": "GND",
+      "14": "GND",
+      "15": "GND",
+      "16": "GND",
+      "17": "GND",
+      "18": "GND",
+      "19": "GND",
+      "20": "PA_OUT_1",
+      "21": "PA_OUT_1",
+      "22": "GND",
+      "23": "GND",
+      "24": "GND",
+      "25": "GND",
+      "26": "GND",
+      "27": "GND",
+      "28": "GND",
+      "29": "GND",
+      "30": "GND",
+      "31": "GND",
+      "32": "GND",
+      "33": "GND"
+    },
+    "sch": [
+      100,
+      60
+    ],
+    "pcb": [
+      105,
+      25
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "3114ae47-113c-539b-ba47-b5d7a282066a",
+    "function_ref": "UPA1"
+  },
+  {
+    "sheet": "RF_POWER_CH1",
+    "ref": "L2",
+    "lib": "Device",
+    "sym": "L",
+    "value": "10n RF TUNE",
+    "fp": "Inductor_SMD:L_0805_2012Metric",
+    "nets": {
+      "1": "VGG_1",
+      "2": "PA_IN_1"
+    },
+    "sch": [
+      70,
+      100
+    ],
+    "pcb": [
+      96,
+      18
+    ],
+    "rot": 90,
+    "dnp": false,
+    "uuid": "f3741e1c-4dd7-51c6-9d9a-257302d37435",
+    "function_ref": "LGATE1"
+  },
+  {
+    "sheet": "RF_POWER_CH1",
+    "ref": "J18",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x02",
+    "value": "EXTERNAL NEGATIVE GATE BIAS",
+    "fp": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+    "nets": {
+      "1": "VGG_1",
+      "2": "GND"
+    },
+    "sch": [
+      35,
+      140
+    ],
+    "pcb": [
+      85,
+      11
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "3c997ee0-33cc-58c2-a67f-ced9a083143c",
+    "function_ref": "JBIAS1"
+  },
+  {
+    "sheet": "RF_POWER_CH1",
+    "ref": "C37",
+    "lib": "Device",
+    "sym": "C",
+    "value": "100n",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "VGG_1",
+      "2": "GND"
+    },
+    "sch": [
+      70,
+      140
+    ],
+    "pcb": [
+      90,
+      14
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "7c44b3ab-736c-5f56-be41-ef1204a41c3c",
+    "function_ref": "C_GATE1"
+  },
+  {
+    "sheet": "RF_POWER_CH1",
+    "ref": "J19",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x02",
+    "value": "EXTERNAL PA DRAIN - CHECK BIAS FIRST",
+    "fp": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+    "nets": {
+      "1": "VPA_EXT_1",
+      "2": "GND"
+    },
+    "sch": [
+      155,
+      140
+    ],
+    "pcb": [
+      122,
+      11
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "42550ea0-bd86-5aae-8c45-14dc40be61ed",
+    "function_ref": "JPA1"
+  },
+  {
+    "sheet": "RF_POWER_CH1",
+    "ref": "R47",
+    "lib": "Device",
+    "sym": "R",
+    "value": "0R DNP",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "VPA_EXT_1",
+      "2": "PA_DRAIN_1"
+    },
+    "sch": [
+      155,
+      110
+    ],
+    "pcb": [
+      115,
+      15
+    ],
+    "rot": 0,
+    "dnp": true,
+    "uuid": "b329a35c-6393-593e-9c5f-a8242b937fe2",
+    "function_ref": "R_PA_PWR1"
+  },
+  {
+    "sheet": "RF_POWER_CH1",
+    "ref": "L3",
+    "lib": "Device",
+    "sym": "L",
+    "value": "10n / >=1A RF TUNE",
+    "fp": "Inductor_SMD:L_0805_2012Metric",
+    "nets": {
+      "1": "PA_DRAIN_1",
+      "2": "PA_OUT_1"
+    },
+    "sch": [
+      140,
+      60
+    ],
+    "pcb": [
+      114,
+      21
+    ],
+    "rot": 90,
+    "dnp": false,
+    "uuid": "5a9133a9-7a5b-5167-add2-c19d28ad90c9",
+    "function_ref": "LDRAIN1"
+  },
+  {
+    "sheet": "RF_POWER_CH1",
+    "ref": "C38",
+    "lib": "Device",
+    "sym": "C",
+    "value": "100n/50V",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "PA_DRAIN_1",
+      "2": "GND"
+    },
+    "sch": [
+      190,
+      140
+    ],
+    "pcb": [
+      120,
+      18
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "b7a755da-41fe-5fc4-ac9c-87a61e167c27",
+    "function_ref": "C_PA_DC1"
+  },
+  {
+    "sheet": "RF_POWER_CH1",
+    "ref": "C39",
+    "lib": "Device",
+    "sym": "C",
+    "value": "10u/50V",
+    "fp": "Capacitor_SMD:C_1210_3225Metric",
+    "nets": {
+      "1": "PA_DRAIN_1",
+      "2": "GND"
+    },
+    "sch": [
+      220,
+      140
+    ],
+    "pcb": [
+      128,
+      18
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "1d6f04b4-b878-51e3-897d-af2b5a1d04a0",
+    "function_ref": "C_PA_B1"
+  },
+  {
+    "sheet": "RF_POWER_CH1",
+    "ref": "C40",
+    "lib": "Device",
+    "sym": "C",
+    "value": "22p C0G 100V / RF TUNE",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "PA_OUT_1",
+      "2": "RF_LOAD_1"
+    },
+    "sch": [
+      180,
+      60
+    ],
+    "pcb": [
+      140,
+      25
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "70cd3041-2a10-5327-bf69-626ea0f520ec",
+    "function_ref": "C_RFOUT1"
+  },
+  {
+    "sheet": "RF_POWER_CH1",
+    "ref": "J20",
+    "lib": "Connector",
+    "sym": "Conn_Coaxial",
+    "value": "RF OUTPUT CH1",
+    "fp": "Connector_Coaxial:SMA_Amphenol_132134_Vertical",
+    "nets": {
+      "1": "RF_LOAD_1",
+      "2": "GND"
+    },
+    "sch": [
+      230,
+      60
+    ],
+    "pcb": [
+      185,
+      25
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "9ef664ea-2fbb-5d1e-b8a2-ef239896d33a",
+    "function_ref": "JRF_OUT1"
+  },
+  {
+    "sheet": "RF_POWER_CH1",
+    "ref": "TH1",
+    "lib": "Device",
+    "sym": "Thermistor_NTC",
+    "value": "10k B3950",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "PA1_NTC",
+      "2": "GND"
+    },
+    "sch": [
+      260,
+      180
+    ],
+    "pcb": [
+      105,
+      31
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "579792c5-03e8-57b6-9e03-7364d0027694",
+    "function_ref": "NTC1"
+  },
+  {
+    "sheet": "RF_POWER_CH1",
+    "ref": "R48",
+    "lib": "Device",
+    "sym": "R",
+    "value": "10k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "PA1_NTC"
+    },
+    "sch": [
+      230,
+      180
+    ],
+    "pcb": [
+      130,
+      35
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "307d2ff0-06b5-57fb-9d6b-ad407152c24b",
+    "function_ref": "R_NTC1"
+  },
+  {
+    "sheet": "RF_POWER_CH1",
+    "ref": "C41",
+    "lib": "Device",
+    "sym": "C",
+    "value": "100n",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "PA1_NTC",
+      "2": "GND"
+    },
+    "sch": [
+      290,
+      180
+    ],
+    "pcb": [
+      136,
+      35
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "c7e88a6c-9e81-541a-ad9a-8a3d6b3ff195",
+    "function_ref": "C_NTC1"
+  },
+  {
+    "sheet": "RF_DRIVER_CH2",
+    "ref": "J21",
+    "lib": "Connector",
+    "sym": "Conn_Coaxial",
+    "value": "RF INPUT CH2",
+    "fp": "Connector_Coaxial:SMA_Amphenol_132134_Vertical",
+    "nets": {
+      "1": "RF_SRC_2",
+      "2": "GND"
+    },
+    "sch": [
+      35,
+      60
+    ],
+    "pcb": [
+      12,
+      60
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "c668fefb-5f1c-5862-acfc-961d8301bd0c",
+    "function_ref": "JRF_IN2"
+  },
+  {
+    "sheet": "RF_DRIVER_CH2",
+    "ref": "C42",
+    "lib": "Device",
+    "sym": "C",
+    "value": "22p C0G / RF TUNE",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "RF_SRC_2",
+      "2": "DRV_IN_2"
+    },
+    "sch": [
+      75,
+      60
+    ],
+    "pcb": [
+      30,
+      60
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "ca7132f0-a5e2-5ba4-b13e-2819eea9d637",
+    "function_ref": "C_RFIN2"
+  },
+  {
+    "sheet": "RF_DRIVER_CH2",
+    "ref": "U5",
+    "lib": "RF_Amplifier",
+    "sym": "GVA-84",
+    "value": "GVA-84 / UNVALIDATED",
+    "fp": "Package_TO_SOT_SMD:SOT-89-3",
+    "nets": {
+      "1": "DRV_IN_2",
+      "2": "GND",
+      "3": "DRV_OUT_2"
+    },
+    "sch": [
+      115,
+      60
+    ],
+    "pcb": [
+      50,
+      60
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "c492f861-6dd3-580a-bac9-9c03ce67e2a2",
+    "function_ref": "UDRV2"
+  },
+  {
+    "sheet": "RF_DRIVER_CH2",
+    "ref": "L4",
+    "lib": "Device",
+    "sym": "L",
+    "value": "10n RF TUNE",
+    "fp": "Inductor_SMD:L_0805_2012Metric",
+    "nets": {
+      "1": "DRV_FEED_2",
+      "2": "DRV_OUT_2"
+    },
+    "sch": [
+      115,
+      100
+    ],
+    "pcb": [
+      54,
+      53
+    ],
+    "rot": 90,
+    "dnp": false,
+    "uuid": "e50c6141-7018-5d70-b281-721e615f9792",
+    "function_ref": "LDRV2"
+  },
+  {
+    "sheet": "RF_DRIVER_CH2",
+    "ref": "R49",
+    "lib": "Device",
+    "sym": "R",
+    "value": "0R DNP",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "+5V",
+      "2": "DRV_FEED_2"
+    },
+    "sch": [
+      75,
+      120
+    ],
+    "pcb": [
+      46,
+      50
+    ],
+    "rot": 0,
+    "dnp": true,
+    "uuid": "1f2de9eb-8b70-507e-85cf-01ac978a7671",
+    "function_ref": "R_DRV_PWR2"
+  },
+  {
+    "sheet": "RF_DRIVER_CH2",
+    "ref": "C43",
+    "lib": "Device",
+    "sym": "C",
+    "value": "100n",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "DRV_FEED_2",
+      "2": "GND"
+    },
+    "sch": [
+      150,
+      110
+    ],
+    "pcb": [
+      60,
+      50
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "a5b074e9-0c52-5b62-9112-76dc025979a2",
+    "function_ref": "C_DRVDC2"
+  },
+  {
+    "sheet": "RF_POWER_CH2",
+    "ref": "C44",
+    "lib": "Device",
+    "sym": "C",
+    "value": "22p C0G / RF TUNE",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "DRV_OUT_2",
+      "2": "PA_IN_2"
+    },
+    "sch": [
+      35,
+      60
+    ],
+    "pcb": [
+      77,
+      60
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "4c812a98-3d41-5d40-9b7e-23923654c6fb",
+    "function_ref": "C_INTER2"
+  },
+  {
+    "sheet": "RF_POWER_CH2",
+    "ref": "U6",
+    "lib": "RF_Amplifier",
+    "sym": "HMC8500PM5E",
+    "value": "HMC8500PM5E / UNVALIDATED",
+    "fp": "Package_CSP:LFCSP-32-1EP_5x5mm_P0.5mm_EP3.1x3.1mm",
+    "nets": {
+      "1": "GND",
+      "2": "GND",
+      "3": "GND",
+      "4": "PA_IN_2",
+      "5": "PA_IN_2",
+      "6": "GND",
+      "7": "GND",
+      "8": "GND",
+      "9": "GND",
+      "10": "GND",
+      "11": "GND",
+      "12": "GND",
+      "13": "GND",
+      "14": "GND",
+      "15": "GND",
+      "16": "GND",
+      "17": "GND",
+      "18": "GND",
+      "19": "GND",
+      "20": "PA_OUT_2",
+      "21": "PA_OUT_2",
+      "22": "GND",
+      "23": "GND",
+      "24": "GND",
+      "25": "GND",
+      "26": "GND",
+      "27": "GND",
+      "28": "GND",
+      "29": "GND",
+      "30": "GND",
+      "31": "GND",
+      "32": "GND",
+      "33": "GND"
+    },
+    "sch": [
+      100,
+      60
+    ],
+    "pcb": [
+      105,
+      60
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "a12eebdb-264f-5ba0-83dc-291e5a97d756",
+    "function_ref": "UPA2"
+  },
+  {
+    "sheet": "RF_POWER_CH2",
+    "ref": "L5",
+    "lib": "Device",
+    "sym": "L",
+    "value": "10n RF TUNE",
+    "fp": "Inductor_SMD:L_0805_2012Metric",
+    "nets": {
+      "1": "VGG_2",
+      "2": "PA_IN_2"
+    },
+    "sch": [
+      70,
+      100
+    ],
+    "pcb": [
+      96,
+      53
+    ],
+    "rot": 90,
+    "dnp": false,
+    "uuid": "040b67d0-c426-5b2f-a0e4-4854dd49f798",
+    "function_ref": "LGATE2"
+  },
+  {
+    "sheet": "RF_POWER_CH2",
+    "ref": "J22",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x02",
+    "value": "EXTERNAL NEGATIVE GATE BIAS",
+    "fp": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+    "nets": {
+      "1": "VGG_2",
+      "2": "GND"
+    },
+    "sch": [
+      35,
+      140
+    ],
+    "pcb": [
+      85,
+      46
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "9e6eb06a-3e96-57c7-adcb-d65d5ca582f1",
+    "function_ref": "JBIAS2"
+  },
+  {
+    "sheet": "RF_POWER_CH2",
+    "ref": "C45",
+    "lib": "Device",
+    "sym": "C",
+    "value": "100n",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "VGG_2",
+      "2": "GND"
+    },
+    "sch": [
+      70,
+      140
+    ],
+    "pcb": [
+      90,
+      49
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "c0de1e5b-a685-57eb-807f-632efbd2877c",
+    "function_ref": "C_GATE2"
+  },
+  {
+    "sheet": "RF_POWER_CH2",
+    "ref": "J23",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x02",
+    "value": "EXTERNAL PA DRAIN - CHECK BIAS FIRST",
+    "fp": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+    "nets": {
+      "1": "VPA_EXT_2",
+      "2": "GND"
+    },
+    "sch": [
+      155,
+      140
+    ],
+    "pcb": [
+      122,
+      46
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "9c94fa9f-edbf-5a2e-a474-dd6f9e6747b7",
+    "function_ref": "JPA2"
+  },
+  {
+    "sheet": "RF_POWER_CH2",
+    "ref": "R50",
+    "lib": "Device",
+    "sym": "R",
+    "value": "0R DNP",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "VPA_EXT_2",
+      "2": "PA_DRAIN_2"
+    },
+    "sch": [
+      155,
+      110
+    ],
+    "pcb": [
+      115,
+      50
+    ],
+    "rot": 0,
+    "dnp": true,
+    "uuid": "3031efe8-5cac-52f7-adbd-cbc1931c82ab",
+    "function_ref": "R_PA_PWR2"
+  },
+  {
+    "sheet": "RF_POWER_CH2",
+    "ref": "L6",
+    "lib": "Device",
+    "sym": "L",
+    "value": "10n / >=1A RF TUNE",
+    "fp": "Inductor_SMD:L_0805_2012Metric",
+    "nets": {
+      "1": "PA_DRAIN_2",
+      "2": "PA_OUT_2"
+    },
+    "sch": [
+      140,
+      60
+    ],
+    "pcb": [
+      114,
+      56
+    ],
+    "rot": 90,
+    "dnp": false,
+    "uuid": "9c6395ef-0741-5b21-b6cc-f2ffef4372af",
+    "function_ref": "LDRAIN2"
+  },
+  {
+    "sheet": "RF_POWER_CH2",
+    "ref": "C46",
+    "lib": "Device",
+    "sym": "C",
+    "value": "100n/50V",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "PA_DRAIN_2",
+      "2": "GND"
+    },
+    "sch": [
+      190,
+      140
+    ],
+    "pcb": [
+      120,
+      53
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "1a9c0854-013b-52c1-b3ca-cf98233591c5",
+    "function_ref": "C_PA_DC2"
+  },
+  {
+    "sheet": "RF_POWER_CH2",
+    "ref": "C47",
+    "lib": "Device",
+    "sym": "C",
+    "value": "10u/50V",
+    "fp": "Capacitor_SMD:C_1210_3225Metric",
+    "nets": {
+      "1": "PA_DRAIN_2",
+      "2": "GND"
+    },
+    "sch": [
+      220,
+      140
+    ],
+    "pcb": [
+      128,
+      53
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "81bb6d0d-6541-5aff-a6cf-50d2b04e5d01",
+    "function_ref": "C_PA_B2"
+  },
+  {
+    "sheet": "RF_POWER_CH2",
+    "ref": "C48",
+    "lib": "Device",
+    "sym": "C",
+    "value": "22p C0G 100V / RF TUNE",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "PA_OUT_2",
+      "2": "RF_LOAD_2"
+    },
+    "sch": [
+      180,
+      60
+    ],
+    "pcb": [
+      140,
+      60
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "6b0f606f-0b3e-532e-a403-55bb55662b15",
+    "function_ref": "C_RFOUT2"
+  },
+  {
+    "sheet": "RF_POWER_CH2",
+    "ref": "J24",
+    "lib": "Connector",
+    "sym": "Conn_Coaxial",
+    "value": "RF OUTPUT CH2",
+    "fp": "Connector_Coaxial:SMA_Amphenol_132134_Vertical",
+    "nets": {
+      "1": "RF_LOAD_2",
+      "2": "GND"
+    },
+    "sch": [
+      230,
+      60
+    ],
+    "pcb": [
+      185,
+      60
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "9031113d-5fa9-5eb7-9ade-f25cbe37adb6",
+    "function_ref": "JRF_OUT2"
+  },
+  {
+    "sheet": "RF_POWER_CH2",
+    "ref": "TH2",
+    "lib": "Device",
+    "sym": "Thermistor_NTC",
+    "value": "10k B3950",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "PA2_NTC",
+      "2": "GND"
+    },
+    "sch": [
+      260,
+      180
+    ],
+    "pcb": [
+      105,
+      66
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "7646614a-9d1d-5f0a-8ece-ab9c7626c95b",
+    "function_ref": "NTC2"
+  },
+  {
+    "sheet": "RF_POWER_CH2",
+    "ref": "R51",
+    "lib": "Device",
+    "sym": "R",
+    "value": "10k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "PA2_NTC"
+    },
+    "sch": [
+      230,
+      180
+    ],
+    "pcb": [
+      130,
+      70
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "64c4ce72-e32a-56c6-84fb-fdb287503a4b",
+    "function_ref": "R_NTC2"
+  },
+  {
+    "sheet": "RF_POWER_CH2",
+    "ref": "C49",
+    "lib": "Device",
+    "sym": "C",
+    "value": "100n",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "PA2_NTC",
+      "2": "GND"
+    },
+    "sch": [
+      290,
+      180
+    ],
+    "pcb": [
+      136,
+      70
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "0fb3b20a-ff26-560d-a9aa-b4a4ede5992e",
+    "function_ref": "C_NTC2"
+  },
+  {
+    "sheet": "CORE_POWER",
+    "ref": "R52",
+    "lib": "Device",
+    "sym": "R",
+    "value": "330k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "VPA_EXT_1",
+      "2": "VPA_MON"
+    },
+    "sch": [
+      250,
+      240
+    ],
+    "pcb": [
+      40,
+      140
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "853ae03e-b732-591d-9f5f-13b0c21bb563",
+    "function_ref": "R_VPA_H"
+  },
+  {
+    "sheet": "CORE_POWER",
+    "ref": "R53",
+    "lib": "Device",
+    "sym": "R",
+    "value": "33k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "VPA_MON",
+      "2": "GND"
+    },
+    "sch": [
+      275,
+      240
+    ],
+    "pcb": [
+      35,
+      140
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "fd3632bc-1a53-558c-bfdf-adbde545c001",
+    "function_ref": "R_VPA_L"
+  },
+  {
+    "sheet": "CORE_POWER",
+    "ref": "C50",
+    "lib": "Device",
+    "sym": "C",
+    "value": "100n",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "VPA_MON",
+      "2": "GND"
+    },
+    "sch": [
+      300,
+      240
+    ],
+    "pcb": [
+      30,
+      140
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "60521ecd-5b10-5d43-8931-c32950d5a76c",
+    "function_ref": "C_VPAMON"
+  },
+  {
+    "sheet": "RF_MONITORING",
+    "ref": "J25",
+    "lib": "Connector",
+    "sym": "Conn_Coaxial",
+    "value": "EXTERNAL RF SAMPLE 1",
+    "fp": "Connector_Coaxial:SMA_Amphenol_132134_Vertical",
+    "nets": {
+      "1": "DET_SAMPLE1",
+      "2": "GND"
+    },
+    "sch": [
+      40,
+      50
+    ],
+    "pcb": [
+      20,
+      73
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "a7e72b9b-bfc9-55aa-beb7-363ed4dda290",
+    "function_ref": "JMON1"
+  },
+  {
+    "sheet": "RF_MONITORING",
+    "ref": "C51",
+    "lib": "Device",
+    "sym": "C",
+    "value": "22p C0G",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "DET_SAMPLE1",
+      "2": "DET_INHI1"
+    },
+    "sch": [
+      70,
+      50
+    ],
+    "pcb": [
+      20,
+      79
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "31d9ab08-e2a0-5473-82c6-edef45fbefb1",
+    "function_ref": "C_DETIN1"
+  },
+  {
+    "sheet": "RF_MONITORING",
+    "ref": "U7",
+    "lib": "RF_Amplifier",
+    "sym": "AD8313xRM",
+    "value": "AD8313ARM",
+    "fp": "Package_SO:MSOP-8_3x3mm_P0.65mm",
+    "nets": {
+      "1": "+5V",
+      "4": "+5V",
+      "6": "GND",
+      "5": "GND",
+      "2": "DET_INHI1",
+      "3": "DET_INLO1",
+      "7": "RF1_FWD_V",
+      "8": "RF1_FWD_V"
+    },
+    "sch": [
+      90,
+      85
+    ],
+    "pcb": [
+      20,
+      87
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "776f0393-b672-57be-931c-57c300f66e02",
+    "function_ref": "UDET1"
+  },
+  {
+    "sheet": "RF_MONITORING",
+    "ref": "C52",
+    "lib": "Device",
+    "sym": "C",
+    "value": "1n",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "DET_INLO1",
+      "2": "GND"
+    },
+    "sch": [
+      55,
+      115
+    ],
+    "pcb": [
+      16,
+      89
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "9cf1ee38-ddde-56aa-9793-fc71265034ce",
+    "function_ref": "C_DETLO1"
+  },
+  {
+    "sheet": "RF_MONITORING",
+    "ref": "C53",
+    "lib": "Device",
+    "sym": "C",
+    "value": "100n",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "+5V",
+      "2": "GND"
+    },
+    "sch": [
+      85,
+      125
+    ],
+    "pcb": [
+      24,
+      89
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "87d764dc-e3e2-5a3c-81c6-ef4fbc300a72",
+    "function_ref": "C_DETV1"
+  },
+  {
+    "sheet": "RF_MONITORING",
+    "ref": "C54",
+    "lib": "Device",
+    "sym": "C",
+    "value": "1n",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "RF1_FWD_V",
+      "2": "GND"
+    },
+    "sch": [
+      110,
+      115
+    ],
+    "pcb": [
+      20,
+      93
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "b310e0c7-b4e1-51ab-9e24-55c5e28324c8",
+    "function_ref": "C_DETO1"
+  },
+  {
+    "sheet": "RF_MONITORING",
+    "ref": "J26",
+    "lib": "Connector",
+    "sym": "Conn_Coaxial",
+    "value": "EXTERNAL RF SAMPLE 2",
+    "fp": "Connector_Coaxial:SMA_Amphenol_132134_Vertical",
+    "nets": {
+      "1": "DET_SAMPLE2",
+      "2": "GND"
+    },
+    "sch": [
+      135,
+      50
+    ],
+    "pcb": [
+      43,
+      73
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "ee644e33-4276-5f96-a4fa-c829a43b5819",
+    "function_ref": "JMON2"
+  },
+  {
+    "sheet": "RF_MONITORING",
+    "ref": "C55",
+    "lib": "Device",
+    "sym": "C",
+    "value": "22p C0G",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "DET_SAMPLE2",
+      "2": "DET_INHI2"
+    },
+    "sch": [
+      165,
+      50
+    ],
+    "pcb": [
+      43,
+      79
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "1381b92d-2f41-550e-8bc5-1536090792d4",
+    "function_ref": "C_DETIN2"
+  },
+  {
+    "sheet": "RF_MONITORING",
+    "ref": "U8",
+    "lib": "RF_Amplifier",
+    "sym": "AD8313xRM",
+    "value": "AD8313ARM",
+    "fp": "Package_SO:MSOP-8_3x3mm_P0.65mm",
+    "nets": {
+      "1": "+5V",
+      "4": "+5V",
+      "6": "GND",
+      "5": "GND",
+      "2": "DET_INHI2",
+      "3": "DET_INLO2",
+      "7": "RF1_REV_V",
+      "8": "RF1_REV_V"
+    },
+    "sch": [
+      185,
+      85
+    ],
+    "pcb": [
+      43,
+      87
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "f6f3cd62-a309-5725-a6d9-a2b994238231",
+    "function_ref": "UDET2"
+  },
+  {
+    "sheet": "RF_MONITORING",
+    "ref": "C56",
+    "lib": "Device",
+    "sym": "C",
+    "value": "1n",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "DET_INLO2",
+      "2": "GND"
+    },
+    "sch": [
+      150,
+      115
+    ],
+    "pcb": [
+      39,
+      89
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "536cf51b-246d-5eaa-84ba-ec21a99173cf",
+    "function_ref": "C_DETLO2"
+  },
+  {
+    "sheet": "RF_MONITORING",
+    "ref": "C57",
+    "lib": "Device",
+    "sym": "C",
+    "value": "100n",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "+5V",
+      "2": "GND"
+    },
+    "sch": [
+      180,
+      125
+    ],
+    "pcb": [
+      47,
+      89
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "b3eaf275-ac29-5b15-914a-b033e64180b4",
+    "function_ref": "C_DETV2"
+  },
+  {
+    "sheet": "RF_MONITORING",
+    "ref": "C58",
+    "lib": "Device",
+    "sym": "C",
+    "value": "1n",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "RF1_REV_V",
+      "2": "GND"
+    },
+    "sch": [
+      205,
+      115
+    ],
+    "pcb": [
+      43,
+      93
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "c498702e-30b8-5381-9240-cb48c63281b1",
+    "function_ref": "C_DETO2"
+  },
+  {
+    "sheet": "RF_MONITORING",
+    "ref": "J27",
+    "lib": "Connector",
+    "sym": "Conn_Coaxial",
+    "value": "EXTERNAL RF SAMPLE 3",
+    "fp": "Connector_Coaxial:SMA_Amphenol_132134_Vertical",
+    "nets": {
+      "1": "DET_SAMPLE3",
+      "2": "GND"
+    },
+    "sch": [
+      230,
+      50
+    ],
+    "pcb": [
+      66,
+      73
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "c0bddfe6-19e3-5737-935f-a9cbd16affe6",
+    "function_ref": "JMON3"
+  },
+  {
+    "sheet": "RF_MONITORING",
+    "ref": "C59",
+    "lib": "Device",
+    "sym": "C",
+    "value": "22p C0G",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "DET_SAMPLE3",
+      "2": "DET_INHI3"
+    },
+    "sch": [
+      260,
+      50
+    ],
+    "pcb": [
+      66,
+      79
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "9e798bad-881c-5e78-ae52-47b31ef479c0",
+    "function_ref": "C_DETIN3"
+  },
+  {
+    "sheet": "RF_MONITORING",
+    "ref": "U9",
+    "lib": "RF_Amplifier",
+    "sym": "AD8313xRM",
+    "value": "AD8313ARM",
+    "fp": "Package_SO:MSOP-8_3x3mm_P0.65mm",
+    "nets": {
+      "1": "+5V",
+      "4": "+5V",
+      "6": "GND",
+      "5": "GND",
+      "2": "DET_INHI3",
+      "3": "DET_INLO3",
+      "7": "RF2_FWD_V",
+      "8": "RF2_FWD_V"
+    },
+    "sch": [
+      280,
+      85
+    ],
+    "pcb": [
+      66,
+      87
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "e0885b70-600a-5e86-b7e2-813955094bdf",
+    "function_ref": "UDET3"
+  },
+  {
+    "sheet": "RF_MONITORING",
+    "ref": "C60",
+    "lib": "Device",
+    "sym": "C",
+    "value": "1n",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "DET_INLO3",
+      "2": "GND"
+    },
+    "sch": [
+      245,
+      115
+    ],
+    "pcb": [
+      62,
+      89
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "950889a4-87a2-516a-8d53-0d9325eadf0a",
+    "function_ref": "C_DETLO3"
+  },
+  {
+    "sheet": "RF_MONITORING",
+    "ref": "C61",
+    "lib": "Device",
+    "sym": "C",
+    "value": "100n",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "+5V",
+      "2": "GND"
+    },
+    "sch": [
+      275,
+      125
+    ],
+    "pcb": [
+      70,
+      89
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "026b1635-1254-53b7-8156-3ef4aac1a7bf",
+    "function_ref": "C_DETV3"
+  },
+  {
+    "sheet": "RF_MONITORING",
+    "ref": "C62",
+    "lib": "Device",
+    "sym": "C",
+    "value": "1n",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "RF2_FWD_V",
+      "2": "GND"
+    },
+    "sch": [
+      300,
+      115
+    ],
+    "pcb": [
+      66,
+      93
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "643517e3-240f-5168-8909-80edf04a96bd",
+    "function_ref": "C_DETO3"
+  },
+  {
+    "sheet": "RF_MONITORING",
+    "ref": "J28",
+    "lib": "Connector",
+    "sym": "Conn_Coaxial",
+    "value": "EXTERNAL RF SAMPLE 4",
+    "fp": "Connector_Coaxial:SMA_Amphenol_132134_Vertical",
+    "nets": {
+      "1": "DET_SAMPLE4",
+      "2": "GND"
+    },
+    "sch": [
+      325,
+      50
+    ],
+    "pcb": [
+      89,
+      73
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "126ac969-88a3-5f59-8d9b-7258487732f2",
+    "function_ref": "JMON4"
+  },
+  {
+    "sheet": "RF_MONITORING",
+    "ref": "C63",
+    "lib": "Device",
+    "sym": "C",
+    "value": "22p C0G",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "DET_SAMPLE4",
+      "2": "DET_INHI4"
+    },
+    "sch": [
+      355,
+      50
+    ],
+    "pcb": [
+      89,
+      79
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "83a14792-fbc6-5f33-9c6a-1fae819cd86f",
+    "function_ref": "C_DETIN4"
+  },
+  {
+    "sheet": "RF_MONITORING",
+    "ref": "U10",
+    "lib": "RF_Amplifier",
+    "sym": "AD8313xRM",
+    "value": "AD8313ARM",
+    "fp": "Package_SO:MSOP-8_3x3mm_P0.65mm",
+    "nets": {
+      "1": "+5V",
+      "4": "+5V",
+      "6": "GND",
+      "5": "GND",
+      "2": "DET_INHI4",
+      "3": "DET_INLO4",
+      "7": "RF2_REV_V",
+      "8": "RF2_REV_V"
+    },
+    "sch": [
+      375,
+      85
+    ],
+    "pcb": [
+      89,
+      87
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "037d24b9-6aaf-5d31-8459-351cdf11e9b0",
+    "function_ref": "UDET4"
+  },
+  {
+    "sheet": "RF_MONITORING",
+    "ref": "C64",
+    "lib": "Device",
+    "sym": "C",
+    "value": "1n",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "DET_INLO4",
+      "2": "GND"
+    },
+    "sch": [
+      340,
+      115
+    ],
+    "pcb": [
+      85,
+      89
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "e4a99005-18fb-55f3-9141-c9014528056d",
+    "function_ref": "C_DETLO4"
+  },
+  {
+    "sheet": "RF_MONITORING",
+    "ref": "C65",
+    "lib": "Device",
+    "sym": "C",
+    "value": "100n",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "+5V",
+      "2": "GND"
+    },
+    "sch": [
+      370,
+      125
+    ],
+    "pcb": [
+      93,
+      89
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "ce0a1a7a-0da2-53ab-8444-240b003389ab",
+    "function_ref": "C_DETV4"
+  },
+  {
+    "sheet": "RF_MONITORING",
+    "ref": "C66",
+    "lib": "Device",
+    "sym": "C",
+    "value": "1n",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "RF2_REV_V",
+      "2": "GND"
+    },
+    "sch": [
+      395,
+      115
+    ],
+    "pcb": [
+      89,
+      93
+    ],
+    "rot": 0,
+    "dnp": false,
+    "uuid": "7c2a1733-3de2-57dc-a2be-a12435021bf0",
+    "function_ref": "C_DETO4"
+  }
+]

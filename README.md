@@ -1,3 +1,16 @@
+# HPA 2CH — MCU only ARTWORK review
+
+- [Download KiCad schematic + routed PCB + outputs ZIP](HPA_2CH_MCU_ARTWORK_Review.zip)
+- [Download Gerber + NC Drill review ZIP](HPA_2CH_MCU_Gerber_Review.zip)
+- [Open KiCad project](HPA_2CH_MCU_ARTWORK/HPA_2CH.kicad_pro)
+- [PCB top preview](HPA_2CH_MCU_ARTWORK/preview/PCB_top.png)
+- [Schematic PDF](HPA_2CH_MCU_ARTWORK/preview/Schematic.pdf)
+- [Read limitations and fabrication requirements](HPA_2CH_MCU_ARTWORK/README_KO.md)
+
+MAX10 reserved area/interface removed; STM32 direct control. 200×160mm, 6 layers. KiCad 9.0.2 final checks: ERC 0, DRC 0, unrouted 0, schematic parity issues 0. **Engineering review only: RF matching, PA bias, hardware protection and thermal performance are unvalidated. External PA supplies/couplers required. Not a fabrication or power-up release.**
+
+---
+
 # HPA 2CH initial draft
 
 - [Download all KiCad draft files](HPA_2CH_Initial_Draft.zip)
