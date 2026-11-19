@@ -1,0 +1,54 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-19T08:06:49+0000",
+    "kicad_version": "9.0.2",
+    "sheets": [
+        {
+            "path": "/CORE_POWER/",
+            "uuid_path": "/ad5e954d-cd85-5b19-bc8b-d6256f185845/58195958-7988-510e-af2e-18cdaa251bb5",
+            "violations": []
+        },
+        {
+            "path": "/FAN_CONTROL/",
+            "uuid_path": "/ad5e954d-cd85-5b19-bc8b-d6256f185845/893add1a-90e4-5acc-8a23-080977e2425d",
+            "violations": []
+        },
+        {
+            "path": "/MAIN_CONTROLLER/",
+            "uuid_path": "/ad5e954d-cd85-5b19-bc8b-d6256f185845/e6b56bf1-a9a3-571d-ba4b-da398415ae69",
+            "violations": []
+        },
+        {
+            "path": "/RF_DRIVER_CH1/",
+            "uuid_path": "/ad5e954d-cd85-5b19-bc8b-d6256f185845/8892742c-3075-5c80-b755-fe3fdf672e3e",
+            "violations": []
+        },
+        {
+            "path": "/RF_DRIVER_CH2/",
+            "uuid_path": "/ad5e954d-cd85-5b19-bc8b-d6256f185845/05b58a35-9e68-5fa7-9c4c-6aa6e6e2375c",
+            "violations": []
+        },
+        {
+            "path": "/RF_MONITORING/",
+            "uuid_path": "/ad5e954d-cd85-5b19-bc8b-d6256f185845/6a048ef5-ac4e-5b4a-a581-a64433e256af",
+            "violations": []
+        },
+        {
+            "path": "/RF_POWER_CH1/",
+            "uuid_path": "/ad5e954d-cd85-5b19-bc8b-d6256f185845/ce5c46dc-4297-5842-9963-d86e0e41f8f3",
+            "violations": []
+        },
+        {
+            "path": "/RF_POWER_CH2/",
+            "uuid_path": "/ad5e954d-cd85-5b19-bc8b-d6256f185845/cad02ac5-a099-59e8-a0c4-f2d0720147a9",
+            "violations": []
+        },
+        {
+            "path": "/",
+            "uuid_path": "/ad5e954d-cd85-5b19-bc8b-d6256f185845",
+            "violations": []
+        }
+    ],
+    "source": "HPA_2CH.kicad_sch"
+}

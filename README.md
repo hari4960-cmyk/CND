@@ -1,3 +1,15 @@
+# HPA 2CH initial draft
+
+- [Download all KiCad draft files](HPA_2CH_Initial_Draft.zip)
+- [Open project source](HPA_2CH_DRAFT/HPA_2CH.kicad_pro)
+- [Root schematic](HPA_2CH_DRAFT/HPA_2CH.kicad_sch)
+- [PCB placement](HPA_2CH_DRAFT/HPA_2CH.kicad_pcb)
+- [Schematic PDF](HPA_2CH_DRAFT/preview/HPA_2CH_Schematic.pdf)
+
+**Initial placement draft, UNROUTED, not for fabrication or power-up.** FPGA device, integrated PA supplies and directional couplers are not implemented. RF matching/bias/thermal design is unverified. See the draft README and actual ERC/DRC results.
+
+---
+
 # STM32 LED10 PCB
 
 ## Latest: 100 × 100 mm — Rev.B

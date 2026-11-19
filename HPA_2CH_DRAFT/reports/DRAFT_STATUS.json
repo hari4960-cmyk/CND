@@ -1,0 +1,25 @@
+{
+  "status": "INITIAL_PLACEMENT_DRAFT_NOT_FOR_FAB_OR_POWERUP",
+  "components": 177,
+  "copper_layers": 6,
+  "outline_mm": [
+    200,
+    160
+  ],
+  "child_schematics": 8,
+  "erc_violations": 0,
+  "drc_violations": 12,
+  "drc_types": {
+    "silk_over_copper": 3,
+    "silk_overlap": 9
+  },
+  "unconnected_items": 481,
+  "schematic_parity_issues": 0,
+  "FPGA_device": "NOT_IMPLEMENTED - reserved area and external header only",
+  "integrated_PA_supply": "NOT_IMPLEMENTED - external drain/bias connectors",
+  "directional_couplers": "NOT_IMPLEMENTED - external RF sample connectors",
+  "RF_matching": "UNVERIFIED - tuning placeholders",
+  "firmware_RTL": "NOT_IMPLEMENTED",
+  "manufacturing_outputs": "NOT_ISSUED",
+  "runtime_load_and_zone_fill_test": "PASS after LoadBoard/BuildConnectivity; delivered zones remain unfilled"
+}
